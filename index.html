@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="register_container">
+        <div class="overlay">
+
+        </div>
+        <div class="titleDiv">
+            <h1 class="title">Register</h1>
+
+            <span class="subtitle">Thanks For Choosing US!</span>
+        </div>
+
+      
+       
+   
+        <form method="POST" name="google-sheet">
+            <div class="rowgrid">
+                <div class="row">
+                    <label for="username">UserName</label>
+                    <input type="text" id="username" name="UserName" placeholder="Enter your username" required>
+                </div>
+
+
+         
+                <form method="POST" name="google-sheet">
+            <div class="rowgrid">
+                <div class="row">
+                    <label for="email">Email Adress</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+
+                <form method="POST" name="google-sheet">
+                    <div class="rowgrid">
+                        <div class="row">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+                        </div>
+
+
+                        <form method="POST" name="google-sheet">
+                            <div class="rowgrid">
+                                <div class="row">
+                                    <label for="password">Password</label>
+                                    <input type="text" id="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                
+                               
+                
+                    <div class="row">
+                       
+                        <input type="submit" id="submitBtn" name="submit" value="Login">
+
+                    </a>
+
+                        <span  class="registerlink"> Copyright &copy;2023 BOOKyy. designed by <span>Prince Raj 
+                        </span>
+
+
+
+                        <script>
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbyavJwMyWToY9YlqJ-Ypq6f_L1YYTSUDYlCvXJlBHH5NYNX3ITmyiUtor-3wSkKKQ4k/exec'
+                            const form = document.forms['google-sheet']
+                          
+
+                            form.addEventListener('submit', e => {
+                              e.preventDefault()
+                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => alert("Login Sucessfull!...."))
+                              //  window.location.replace('book.html')
+                               
+                            .catch(error => console.error('Error!', error.message))
+                           
+                           })
+
+
+
+
+
+
+
+                          </script>
+
+
+
+</body>
+</html>
